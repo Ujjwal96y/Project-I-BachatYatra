@@ -1,27 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BachatYatra</title>
+
     <link rel="stylesheet" href="../CSS/login.css">
 </head>
 
 <body>
 
     <div class="field">
-        <fieldset class="fieldset">
+
+        <!-- Login Box -->
+        <fieldset class="fieldset" id="login-box">
+
             <legend class="login">LOGIN</legend>
 
             <div class="form">
-                <label>Enter Your username / gmail:</label><br>
-                <input type="text" required placeholder="example@gmail.com">
 
-                <label>Password</label><br>
-                <input type="password" required>
+                <label>Enter Your Username / Gmail:</label>
+                <input type="email" id="login-email" placeholder="example@gmail.com">
+
+                <label>Password:</label>
+                <input type="password" id="login-password" placeholder="Enter password">
+
             </div>
 
-            <a href="../HTML/home.html" class="login-btn">LOGIN</a>
+            <button class="login-btn" onclick="loginUser()">
+                LOGIN
+            </button>
+
+            <p class="account-text">
+                Don't have an account?
+                <a href="#" onclick="showRegister()">Create Account</a>
+            </p>
 
         </fieldset>
+
+
+        <!-- Register Box -->
+        <fieldset class="fieldset hidden" id="register-box">
+
+            <legend class="login">CREATE ACCOUNT</legend>
+
+            <div class="form">
+
+                <label>Full Name:</label>
+                <input type="text" id="register-name" placeholder="Your Name">
+
+
+                <label>Email:</label>
+                <input type="email" id="register-email" placeholder="example@gmail.com">
+
+
+                <label>Password:</label>
+                <input type="password" id="register-password" placeholder="Create Password">
+
+            </div>
+
+
+            <button class="login-btn" onclick="registerUser()">
+                REGISTER
+            </button>
+
+
+            <p class="account-text">
+                Already have an account?
+                <a href="#" onclick="showLogin()">Login</a>
+            </p>
+
+        </fieldset>
+
     </div>
 
+
+<script src="../JS/login.js"></script>
+
 </body>
+
 </html>

@@ -1,94 +1,215 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+
+html{
+    scroll-behavior:smooth;
 }
+
 
 body{
-    background-image: url("../Assets/रु.png"); /* NEED TO ADD IMAGE SRC */
-    width: 100%;
-    min-height: 100vh;
-    background-color:#1a6b3c ;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    background-image:url("../Assets/रु.png");
 
-    overflow-x: hidden;
+    width:100%;
+    min-height:100vh;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+
+    overflow:hidden;
+
 }
+
+
 
 .field{
-    display: flex;
-    margin-right: 40px;
+
+    display:flex;
+    margin-right:40px;
+
 }
+
+
 
 .fieldset{
-    width: 320px;
-    padding: 20px;
-    border-radius: 15px;
-    border: 2px solid white;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(6px);
+
+    width:350px;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    border:2px solid white;
+
+    background:rgba(0,0,0,0.45);
+
+    backdrop-filter:blur(8px);
+
 }
+
+
 
 .login{
-    text-align: center;
-    color: aliceblue;
-    font-weight: bolder;
-    background-color: transparent;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    padding:0 15px;
+
 }
+
+
 
 .form{
-    text-align: left;
-    color: aliceblue;
+
+    color:white;
+
 }
+
+
+
+.form label{
+
+    display:block;
+
+    margin-top:12px;
+
+    font-weight:bold;
+
+}
+
+
 
 input{
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: none;
+
+    width:100%;
+
+    padding:10px;
+
+    margin-top:5px;
+
+    border-radius:8px;
+
+    border:none;
+
+    outline:none;
+
 }
+
+
 
 .login-btn{
-    text-align: center;
-    background-color: green;
-    color: white;
-    display: block;
-    padding: 10px;
-    border-radius: 15px;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: bold;
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:20px;
+
+
+    background:#1a8f45;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
 }
+
+
 
 .login-btn:hover{
-    opacity: 0.9;
+
+    background:#146b34;
+
 }
 
-@media (max-width: 768px){
+
+
+.account-text{
+
+    color:white;
+
+    text-align:center;
+
+    margin-top:15px;
+
+}
+
+
+
+.account-text a{
+
+    color:#7cff9c;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+
+
+.hidden{
+
+    display:none;
+
+}
+
+
+
+@media(max-width:768px){
+
 
     body{
-        justify-content: center;
-        padding: 20px;
+
+        justify-content:center;
+
+        padding:20px;
+
     }
+
 
     .field{
-        margin-right: 0;
-        width: 100%;
-        justify-content: center;
+
+        margin-right:0;
+
+        width:100%;
+
+        justify-content:center;
+
     }
 
+
     .fieldset{
-        width: 100%;
-        max-width: 320px;
+
+        width:100%;
+
+        max-width:350px;
+
     }
+
 }

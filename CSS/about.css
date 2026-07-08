@@ -6,16 +6,22 @@
     padding:0;
 }
 
+
 html{
     scroll-behavior:smooth;
 }
 
+
+
 body{
+
     font-family:'Nunito',sans-serif;
     background:#0d1f14;
     color:white;
-    overflow-x:hidden;
+    line-height:1.7;
 }
+
+
 
 a{
     text-decoration:none;
@@ -30,8 +36,6 @@ img{
     max-width:100%;
     display:block;
 }
-
-/* NAVBAR */
 
 .nav-bar{
     position:sticky;
@@ -91,94 +95,295 @@ img{
     background:#0f4025;
 }
 
-.main {
-    min-height: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 40px 20px;
-    gap: 30px;
+
+
+
+
+/* ================= ABOUT ================= */
+
+
+.main{
+
+    padding:70px 8%;
+
 }
 
-.about-content {
-    background-color: #bbaa15;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+
+
+.about-content{
+
+    background:#bbaa15;
+
+    padding:35px;
+
+    border-radius:18px; 
+
+    text-align:center;
+
+    margin-bottom:40px;
+
 }
 
-.main-text {
-    font-family: 'Playfair Display', serif;
-    font-size: 68px;
-    font-weight: 900;
-    line-height: 1.08;
-    color: white;
-    margin-bottom: 20px;
+
+
+.main-text{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:60px;
+
+    font-weight:900;
+
 }
 
-/* TEXT AREA */
-.about-text p {
-    max-width: 900px;
-    margin: 0 auto;
-    color: #c8ddd1;
+
+
+.about-text{
+
+    max-width:950px;
+
+    margin:auto;
+
 }
 
-/* FOOTER */
-.footer {
-    background-color: #080f0b;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 60px 60px 30px;
+
+
+.about-text p{
+
+    color:#c8ddd1;
+
+    font-size:17px;
+
+    text-align:justify;
+
 }
 
-.footer-top {
-    display: flex;
-    gap: 60px;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
+
+
+
+/* ================= FOOTER ================= */
+
+
+.footer{
+
+    background:#080f0b;
+
+    padding:60px 8% 30px;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
 }
 
-.footer-brand {
-    max-width: 260px;
+
+
+.footer-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:60px;
+
+    flex-wrap:wrap;
+
 }
 
-.footer-brand p {
-    font-size: 14px;
-    color: #7aad90;
+
+
+
+.footer-brand{
+
+    max-width:300px;
+
 }
 
-.footer-links {
-    display: flex;
-    gap: 60px;
-    flex: 1;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+
+
+.footer-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:15px;
+
 }
 
-.footer-col h5 {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 15px;
+
+
+.footer-logo img{
+
+    width:45px;
+
+    height:45px;
+
+    object-fit:contain;
+
 }
 
-.footer-col ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+
+
+.footer-logo span{
+
+    font-size:22px;
+
+    font-weight:700;
+
 }
 
-.footer-col ul li a {
-    font-size: 14px;
-    color: #7aad90;
+
+
+.footer-brand p{
+
+    color:#b7bdb8;
+
+    font-size:14px;
+
 }
 
-.footer-col ul li a:hover {
-    color: #ffffff;
+
+
+
+
+.footer-links{
+
+    display:flex;
+
+    gap:70px;
+
 }
 
-.footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    padding-top: 20px;
-    text-align: center;
-    font-size: 13px;
-    color: #4a6a52;
+
+
+.footer-col h5{
+
+    font-size:18px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.footer-col li{
+
+    margin-bottom:10px;
+
+}
+
+
+
+.footer-col a{
+
+    color:#b7bdb8;
+
+    font-size:14px;
+
+}
+
+
+
+.footer-col a:hover{
+
+    color:white;
+
+}
+
+
+
+
+
+.footer-bottom{
+
+    margin-top:40px;
+
+    padding-top:20px;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.1);
+
+}
+
+
+
+.footer-bottom p{
+
+    color:#9ca39d;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* ================= RESPONSIVE ================= */
+
+
+@media(max-width:900px){
+
+
+.nav-bar{
+
+    padding:0 25px;
+
+}
+
+
+.nav-links{
+
+    display:none;
+
+}
+
+
+.main{
+
+    padding:50px 25px;
+
+}
+
+
+
+.main-text{
+
+    font-size:42px;
+
+}
+
+
+
+.footer-links{
+
+    gap:35px;
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.footer-links{
+
+    flex-direction:column;
+
+}
+
+
+.about-text p{
+
+    text-align:left;
+
+}
+
+
+
 }
