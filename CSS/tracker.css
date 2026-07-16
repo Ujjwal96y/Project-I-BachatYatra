@@ -15,6 +15,7 @@ body{
     background:#0d1f14;
     color:white;
     overflow-x:hidden;
+
 }
 
 a{
@@ -92,7 +93,7 @@ img{
 }
 
 
-.main{
+.finance-page{
     min-height: auto;
     display: flex;
     flex-direction: column;
@@ -100,18 +101,15 @@ img{
     gap: 30px;
 }
 
-
-
-.contact-header{
-   background-color: #bbaa15;
+.finance-header{
+    background-color: #bbaa15;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-
 }
 
-.contact-header h1{
-    font-family: 'Playfair Display', serif;
+.finance-header h1{
+     font-family: 'Playfair Display', serif;
     font-size: 68px;
     font-weight: 900;
     line-height: 1.08;
@@ -119,53 +117,55 @@ img{
     margin-bottom: 20px;
 }
 
-.contact-header p{
-    color:#c8ddd1;
-    max-width:750px;
-    margin:auto;
-    font-size:18px;
-}
 
-.contact-container{
-    display:flex;
-    justify-content:center;
-    gap:35px;
-    flex-wrap:wrap;
-}
 
-.contact-card{
-    width:320px;
+.finance-card{
     background:#14281b;
     padding:35px;
     border-radius:15px;
-    border:1px solid rgba(255,255,255,.08);
-    text-align:center;
-    transition:.3s;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
 }
 
-.contact-card:hover{
-    transform:translateY(-8px);
-    border-color:#f2c936;
+.finance-card input{
+    width:100%;
+    padding:15px;
+    border-radius:8px;
+    border:none;
+    background:#0d1f14;
+    color:white;
 }
 
-.contact-card h2{
-    color:#f2c936;
-    margin-bottom:20px;
+.finance-card button{
+    background:#27a85e;
+    color:white;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:17px;
 }
 
-.contact-card p{
-    color:#b8d5c5;
-    margin-bottom:20px;
+.finance-card button:hover{
+    background:#f5c518;
+    color:black;
 }
 
-.contact-card a{
-    color:#27d26c;
-    font-weight:bold;
-    word-break:break-word;
+.result-card{
+    margin-top:35px;
+    background:#14281b;
+    border-radius:15px;
+    padding:35px;
 }
 
-.contact-card a:hover{
+.result-card h2{
     color:#f5c518;
+}
+
+.result-card p{
+    margin:10px 0;
+    color:#d6dfd8;
 }
 
 .footer {
@@ -276,105 +276,36 @@ img{
     color:#9ca39d;
     font-size:14px;
 }
-/* CONTACT FORM */
 
-.contact-form-section{
-    max-width:850px;
-    margin:20px auto;
-    background:#14281b;
-    padding:40px;
-    border-radius:15px;
-    border:1px solid rgba(255,255,255,.08);
-}
 
-.contact-form-section h2{
-    text-align:center;
-    margin-bottom:30px;
-    color:#f5c518;
-    font-size:32px;
-}
 
-.contact-form{
-    display:flex;
-    flex-direction:column;
-    gap:22px;
-}
+/* Responsive */
 
-.form-row{
-    display:flex;
-    gap:20px;
-}
+@media(max-width:768px){
 
-.input-group{
-    display:flex;
-    flex-direction:column;
-    flex:1;
-}
+    .footer{
+        padding:40px 25px 25px;
+    }
 
-.input-group label{
-    margin-bottom:8px;
-    font-weight:700;
-    color:#dce8df;
-}
 
-.input-group input,
-.input-group textarea{
-    width:100%;
-    padding:14px 16px;
-    border-radius:10px;
-    border:1px solid rgba(255,255,255,.12);
-    background:#0d1f14;
-    color:white;
-    font-size:15px;
-    outline:none;
-    transition:.3s;
-}
-
-.input-group input:focus,
-.input-group textarea:focus{
-    border-color:#f5c518;
-}
-
-.input-group textarea{
-    resize:vertical;
-}
-
-.submit-btn{
-    align-self:center;
-    padding:14px 40px;
-    border:none;
-    border-radius:40px;
-    background:#27a85e;
-    color:white;
-    font-size:16px;
-    font-weight:700;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.submit-btn:hover{
-    background:#f5c518;
-    color:#0d1f14;
-}
-
-/* RESPONSIVE */
-
-@media (max-width:768px){
-
-    .form-row{
+    .footer-top{
         flex-direction:column;
+        gap:35px;
     }
 
-    .contact-form-section{
-        padding:25px;
-    }
 
-    .contact-header h1{
-        font-size:48px;
+    .footer-links{
+        gap:40px;
     }
-
 
 }
 
 
+@media(max-width:480px){
 
+    .footer-links{
+        flex-direction:column;
+        gap:25px;
+    }
+
+}
