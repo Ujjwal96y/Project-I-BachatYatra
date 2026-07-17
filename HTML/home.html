@@ -5,27 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BachatYatra - GenZ don't only spend, we also track and save.</title>
     <link rel="stylesheet" href="../CSS/home.css"> <!--NEED TO BE ADDED-->
+
+    <script>
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("active");
+});
+</script>
 </head>
 <body>
     <nav class="nav-bar">
-        <div class="logo">
-            <div class="logo-icon">
-                <img src="../Assets/BachatYatra-Logo.png" alt="BY"> <!--LOGO HERE-->
-            </div>
-            <span class="brand-name">BachatYatra</span>
+    <div class="logo">
+        <div class="logo-icon">
+            <img src="../Assets/BachatYatra-Logo.png" alt="BY">
         </div>
-        <ul class="nav-links">
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="tracker.html">TRACKER</a></li>
-            <li><a href="news.html">NEWS</a></li>
-            <li><a href="learn.html">LEARN</a></li>
-            <li><a href="mission.html">OUR MISSION</a></li>
-            <li><a href="policy.html">OUR POLICIES</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-            <li><a href="login.html" class="nav-login">LOGIN</a></li>
-        </ul>
-    </nav>
+        <span class="brand-name">BachatYatra</span>
+    </div>
+
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="tracker.html">TRACKER</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="learn.html">LEARN</a></li>
+        <li><a href="mission.html">OUR MISSION</a></li>
+        <li><a href="policy.html">OUR POLICIES</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="login.html" class="nav-login">LOGIN</a></li>
+    </ul>
+</nav>
     <section class="main" id="home">
         <div class="main-content">
             
