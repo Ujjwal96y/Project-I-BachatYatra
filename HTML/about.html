@@ -17,22 +17,21 @@
 
 
 <nav class="nav-bar">
-
     <div class="logo">
-
         <div class="logo-icon">
-            <img src="../Assets/BachatYatra-Logo.png" alt="BachatYatra Logo">
+            <img src="../Assets/BachatYatra-Logo.png" alt="BY">
         </div>
-
-        <span class="nav-brand-name">
-            BachatYatra
-        </span>
-
+        <span class="brand-name">BachatYatra</span>
     </div>
 
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-    <ul class="nav-links">
-
+    <ul class="nav-links" id="navLinks">
         <li><a href="home.html">HOME</a></li>
         <li><a href="tracker.html">TRACKER</a></li>
         <li><a href="news.html">NEWS</a></li>
@@ -41,15 +40,8 @@
         <li><a href="policy.html">OUR POLICIES</a></li>
         <li><a href="about.html">ABOUT US</a></li>
         <li><a href="contact.html">CONTACT US</a></li>
-
-        <li>
-            <a href="login.html" class="nav-login">
-                LOGIN
-            </a>
-        </li>
-
+        <li><a href="login.html" class="nav-login">LOGIN</a></li>
     </ul>
-
 </nav>
 
 
@@ -237,7 +229,15 @@
 
 </footer>
 
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
 
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("active");
+});
+</script>
 
 </body>
 </html>
