@@ -135,6 +135,25 @@ img{
     max-width: 460px;
     margin-bottom: 36px;
 }
+.main-2 {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+    gap: 40px;
+    background-image:url(../Assets/main-2.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: centerSS;
+}
+
+.main-2-content {
+    max-width: 560px;
+    flex-shrink: 0;
+}
 
 .footer {
     background-color: #080f0b;

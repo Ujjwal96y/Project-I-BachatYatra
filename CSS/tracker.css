@@ -305,11 +305,7 @@ img{
 .hamburger.active span:nth-child(3){
     transform:translateY(-9px) rotate(-45deg);
 }
-
-
-/* ==========================
-   LARGE TABLETS
-========================== */
+    
 
 @media (max-width:1024px){
 
@@ -330,11 +326,6 @@ img{
     }
 
 }
-
-
-/* ==========================
-   TABLETS
-========================== */
 
 @media (max-width:768px){
 
@@ -387,11 +378,6 @@ img{
     }
 
 }
-
-
-/* ==========================
-   MOBILE
-========================== */
 
 @media (max-width:480px){
 
